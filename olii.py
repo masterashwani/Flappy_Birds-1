@@ -7,7 +7,7 @@ from pygame.locals import *
 pygame.init()
 
 width = 1250
-height = 720
+height = 714
 screen = pygame.display.set_mode((width, height))
 clock = pygame.time.Clock()
 fps = 60
@@ -23,6 +23,9 @@ pygame.display.set_caption("Flappy Bird")
 # sounds
 point = pygame.mixer.Sound("sounds/sfx_point.wav")
 hit = pygame.mixer.Sound("sounds/sfx_hit.wav")
+#bgmusic
+pygame.mixer.music.load("sounds/bgmusic.mp3") 
+pygame.mixer.music.play(-1)
 
 
 class Game:
